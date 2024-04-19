@@ -3,56 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRAVELGRAM</title>
-    <link rel="stylesheet" href="Login.css">
+    <title>Ecomars Website</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="abc">
-        <div class="form-box">
-            <div class="button-box">
-                <div id="btn"></div>
-                <button type="button" class="toggle-button" onclick="Login()">Login</button>
-                <button type="button" class="toggle-button" onclick="Register()">Register</button>
-            </div>
-            
-            <div id="Login" class="input-group">
-                <input type="email" class="input-field" placeholder="Email Id">
-                <input type="text" class="input-field" placeholder="Enter Password">
-                <input type="checkbox" class="check-box"><span>Remember Password</span>
+
+       <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Bagpack</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Shose</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </nav>
+             </div>
+
+             <div class="container">
+                <div id="carouselExampleControls" class="carousel slide orange-bg" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row align-items-center">
+                                <div class="col-md-7">
+                                    <h1>Coll Duble Hadephone</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et perferendis necessitatibus</p>
+                                    <h1 class="price">$400</h1>
+                                    <button class="buy-now-btn">Buy Now</button>
+                                </div>
+                                <div class="col-md-5">
+                                    <img src="img/banner-images/headphone.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-7">
+                                    <h1>Brand New LED TV</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et perferendis necessitatibus</p>
+                                    <h1 class="price">$1200</h1>
+                                    <button class="buy-now-btn">Buy Now</button>
+                                </div>
+                                <div class="col-md-5">
+                                    <img src="img/banner-images/tv.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-7">
+                                    <h1>X-Box Brand New</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et perferendis necessitatibus</p>
+                                    <h1 class="price">$600</h1>
+                                    <button class="buy-now-btn">Buy Now</button>
+                                </div>
+                                <div class="col-md-5">
+                                    <img src="img/banner-images/xbox.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" style="width: 50px;" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" style="width: 50px;"  href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+             </div>
+
+
+             <div class="container catagoris">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="cat-1 d-flex justify-content-between align-items-center">
+                            <h1>Watch</h1>
+                            <img src="img/categories/watch.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="cat-2 d-flex justify-content-between align-items-center">
+                            <h1>Bag</h1>
+                            <img src="img/categories/bag.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="cat-3 d-flex justify-content-between align-items-center">
+                            <h1>Shoes</h1>
+                            <img src="img/categories/shoes.png" alt="">
+                        </div>
+                    </div>
                 
-                <a href="Post.html" target="_blank">
-  <button type="submit" class="submit-button">Login</button>
-              
-                </a>
-            </div>
-            
-            <div id="Register" class="input-group">
-                <input type="text" class="input-field" placeholder="Name" required>
-                <input type="email" class="input-field" placeholder="Email Id" required>
-                <input type="text" class="input-field" placeholder="Enter Password" required>
-                <input type="text" class="input-field" placeholder="Confirm Password" required>
-                <input type="checkbox" class="check-box"><span>I agree to the terms & conditions.</span>
-                <button type="submit" class="submit-button">Register</button>
-            </div>
-        </div>
-    </div>
-    
-    <script>
-        var x = document.getElementById("Login");
-        var y = document.getElementById("Register");
-        var z = document.getElementById("btn");
-        
-        function Register() {
-            x.style.left = "-450px";
-            y.style.left = "50px";
-            z.style.left = "110px";
-        }
-        
-        function Login() {
-            x.style.left = "50px";
-            y.style.left = "450px";
-            z.style.left = "0px";
-        }
-    </script>
+                </div>
+             </div>
+
+             <!-- start card section -->
+
+             <div class="container shes" id="shes">
+                 <h3>Shoes</h3>
+                <div class="card-deck">
+                    <div class="card">
+                        <img src="img/shoes/shoe-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Shoes 350</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <h5>$120</h5>
+                            <button class="buy-now-btn">Buy Now >></button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/shoes/shoe-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Niki 360</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <h5>$320</h5>
+                            <button class="buy-now-btn">Buy Now >></button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/shoes/shoe-3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Red Airmax</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <h5>$350</h5>
+                            <button class="buy-now-btn">Buy Now >></button>
+                        </div>
+                    </div>
+                </div>
+             </div>
+
+             <div class="container" id="bagpack">
+                 <h3>Bagpack</h3>
+                <div class="card-deck">
+                    <div class="card">
+                        <img src="img/bags/bag-3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Black Daymond</h5>
+                            <h5>$125</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-center">
+                            <button class="buy-now-btn">Buy Now >></button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/bags/bag-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Blue Daymond</h5>
+                            <h5>$120</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-center">
+                            <button class="buy-now-btn">Buy Now >></button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/bags/bag-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Red Daymond</h5>
+                            <h5>$169</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-center">
+                            <button class="buy-now-btn">Buy Now >></button>
+                        </div>
+                    </div>
+                </div>
+             </div>
+
+             <div class="container orange-bg d-flex justify-content-center align-items-center" id="suvscrive">
+                <div>
+                    <h3>LET'S STAY IN TOUCH</h3>
+                    <h6>Get updates in sales speials and more</h6>
+                    <form action="">
+                        <input type="email" name="email" class="form-control" placeholder="Enter Your Email">
+                        <button class="buy-now-btn">SUBMIT</button>
+                    </form>
+                </div>
+             </div>
+
+             <footer>
+                 <small>©2020.Panda Commers. All Right Reseved.</small>
+             </footer>
+
+    <!-- my javascript -->
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </body>
 </html>
